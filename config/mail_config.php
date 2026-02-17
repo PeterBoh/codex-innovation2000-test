@@ -1,7 +1,7 @@
 <?php
 // SMTP Zugangsdaten (NICHT öffentlich!)
 $SMTP_HOST = 'smtp.strato.de';
-$SMTP_USER = 'kontakt@innovation2000.de';
+$SMTP_USER = '';
 $SMTP_PASS = '';
 
 $SMTP_PORT = 587;     // alternativ 465
