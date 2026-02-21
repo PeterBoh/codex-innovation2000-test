@@ -144,6 +144,53 @@ h1{ font-size:44px; line-height:1.1; margin:0 0 14px; }
   padding:8px 10px;
   border-radius:999px;
 }
+.pill-link{
+  color:var(--text);
+  font-weight:700;
+  text-decoration:none;
+  border-width:2px;
+}
+.pill-link:hover{
+  transform: translateY(-1px);
+}
+.highlight-yellow{
+  background: color-mix(in srgb, #facc15 35%, var(--panel));
+  border-color:#facc15;
+}
+.highlight-green{
+  background: color-mix(in srgb, #86efac 35%, var(--panel));
+  border-color:#22c55e;
+}
+.highlight-purple{
+  background: color-mix(in srgb, #c4b5fd 35%, var(--panel));
+  border-color:#8b5cf6;
+}
+.highlight-cyan{
+  background: color-mix(in srgb, #67e8f9 35%, var(--panel));
+  border-color:#06b6d4;
+}
+
+
+.offers-list{
+  display:grid;
+  gap:16px;
+}
+.offer{
+  background: var(--card);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:18px;
+}
+.offer h3{
+  margin:0 0 10px;
+  font-size:22px;
+}
+.offer p{
+  margin:0 0 10px;
+}
+.offer p:last-child{
+  margin-bottom:0;
+}
 
 /* ====== Cards / Blocks ====== */
 .card{
