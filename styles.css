@@ -80,11 +80,6 @@ header{
   gap:16px;
 }
 .brand{ display:flex; gap:10px; align-items:center; font-weight:800; letter-spacing:.2px; }
-.logo{
-  width:36px; height:36px; border-radius:10px;
-  background: linear-gradient(135deg,var(--primary),var(--primary2));
-  box-shadow: var(--shadow);
-}
 .menu{ display:flex; gap:14px; flex-wrap:wrap; justify-content:flex-end; }
 .menu a{
   font-size:14px;
@@ -153,21 +148,13 @@ h1{ font-size:44px; line-height:1.1; margin:0 0 14px; }
 .pill-link:hover{
   transform: translateY(-1px);
 }
-.highlight-yellow{
-  background: color-mix(in srgb, #facc15 35%, var(--panel));
-  border-color:#facc15;
-}
-.highlight-green{
-  background: color-mix(in srgb, #86efac 35%, var(--panel));
-  border-color:#22c55e;
-}
-.highlight-purple{
-  background: color-mix(in srgb, #c4b5fd 35%, var(--panel));
-  border-color:#8b5cf6;
-}
+.highlight-yellow,
+.highlight-green,
+.highlight-purple,
 .highlight-cyan{
-  background: color-mix(in srgb, #67e8f9 35%, var(--panel));
-  border-color:#06b6d4;
+  background: color-mix(in srgb, var(--primary) 16%, var(--panel));
+  border-color: color-mix(in srgb, var(--primary) 70%, #93c5fd);
+  color: color-mix(in srgb, var(--text) 80%, var(--primary));
 }
 
 
@@ -201,6 +188,7 @@ h1{ font-size:44px; line-height:1.1; margin:0 0 14px; }
   padding:18px;
 }
 .stats{ display:grid; grid-template-columns: repeat(3,1fr); gap:12px; margin-top:14px; }
+.stats-two{ grid-template-columns: repeat(2,1fr); }
 .stat{
   background: var(--card);
   border:1px solid var(--line);
@@ -211,6 +199,7 @@ h1{ font-size:44px; line-height:1.1; margin:0 0 14px; }
 
 /* ====== Sections ====== */
 section{ padding:44px 0; }
+section[id], article[id]{ scroll-margin-top: 96px; }
 .section-title{
   display:flex;
   align-items:flex-end;
