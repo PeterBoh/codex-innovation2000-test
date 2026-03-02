@@ -46,3 +46,22 @@ if (form && hint) {
     }
   });
 }
+
+const header = document.querySelector("header");
+
+function updateHeaderOffset() {
+  if (!header) return;
+  const headerHeight = Math.ceil(header.getBoundingClientRect().height);
+  document.documentElement.style.setProperty("--header-offset", `${headerHeight}px`);
+}
+
+if (header) {
+  updateHeaderOffset();
+  window.addEventListener("load", updateHeaderOffset);
+  window.addEventListener("resize", updateHeaderOffset);
+
+  if ("ResizeObserver" in window) {
+    const headerObserver = new ResizeObserver(updateHeaderOffset);
+    headerObserver.observe(header);
+  }
+}
