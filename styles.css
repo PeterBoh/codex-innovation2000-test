@@ -78,6 +78,7 @@ header{
   align-items:center;
   justify-content:space-between;
   padding:14px 0;
+  padding-left:12px;
   gap:16px;
 }
 .brand{ display:flex; gap:10px; align-items:center; font-weight:800; letter-spacing:.2px; text-decoration:none; color:var(--text); }
@@ -315,6 +316,6 @@ footer{ padding:26px 0; border-top:1px solid var(--line); color:var(--muted); fo
   }
 
   .brand{
-    margin-inline-start: 6px;
+    margin-inline-start: 0;
   }
 }
