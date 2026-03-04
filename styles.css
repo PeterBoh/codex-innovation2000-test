@@ -129,7 +129,7 @@ header{
   gap:28px;
   align-items:center;
 }
-h1{ font-size:44px; line-height:1.1; margin:0 0 14px; white-space:nowrap; }
+h1{ font-size:44px; line-height:1.1; margin:0 0 14px; }
 .lead{ font-size:18px; color:var(--muted); margin:0 0 22px; }
 .hero-actions{ display:flex; gap:12px; flex-wrap:wrap; }
 .pillrow{ display:flex; gap:10px; flex-wrap:wrap; margin-top:18px; }
@@ -301,7 +301,7 @@ footer{ padding:26px 0; border-top:1px solid var(--line); color:var(--muted); fo
 /* Responsive */
 @media (max-width: 900px){
   .hero-grid{ grid-template-columns:1fr; }
-  h1{ font-size:36px; white-space:normal; }
+  h1{ font-size:36px; }
   .grid3{ grid-template-columns:1fr; }
   .grid4{ grid-template-columns:1fr; }
   .grid2{ grid-template-columns:1fr; }
