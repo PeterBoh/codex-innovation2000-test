@@ -313,4 +313,8 @@ footer{ padding:26px 0; border-top:1px solid var(--line); color:var(--muted); fo
   :root{
     --container-pad: 24px;
   }
+
+  .brand{
+    margin-inline-start: 6px;
+  }
 }
