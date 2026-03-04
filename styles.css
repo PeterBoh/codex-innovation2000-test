@@ -80,7 +80,8 @@ header{
   padding:14px 0;
   gap:16px;
 }
-.brand{ display:flex; gap:10px; align-items:center; font-weight:800; letter-spacing:.2px; }
+.brand{ display:flex; gap:10px; align-items:center; font-weight:800; letter-spacing:.2px; text-decoration:none; color:var(--text); }
+.brand .small{ display:block; margin:0; }
 .menu{ display:flex; gap:14px; flex-wrap:wrap; justify-content:flex-end; }
 .menu a{
   font-size:14px;
@@ -197,6 +198,17 @@ h1{ font-size:44px; line-height:1.1; margin:0 0 14px; }
   padding:14px;
 }
 .stat b{ display:block; font-size:18px; }
+
+.stat-list{
+  margin:8px 0 0;
+  padding-left:18px;
+}
+.stat-list li{
+  margin-bottom:4px;
+}
+.stat-list li:last-child{
+  margin-bottom:0;
+}
 
 /* ====== Sections ====== */
 section{ padding:44px 0; }
