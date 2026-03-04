@@ -10,15 +10,15 @@
   <script defer src="script.js"></script>
 </head>
 
-<body>
+<body id="top">
 
 <header>
   <div class="container nav">
-    <div class="brand">
+    <a class="brand" href="#top" aria-label="Zum Seitenanfang springen">
       <div>
         Innovation 2000<br><span class="small">Nachhilfe in Oberzent</span>
       </div>
-    </div>
+    </a>
 
     <nav class="menu" aria-label="Navigation">
       <a href="#unterrichtsangebote">Angebote</a>
@@ -56,8 +56,21 @@
         <h3 class="m0 mb6">Einzelunterricht</h3>
 
         <div class="stats stats-two">
-          <div class="stat"><b>Für Schüler bedeutet das...</b><span class="small">Lerninhalt, Tempo und Methoden werden exakt den Bedürfnissen angepasst, volle Aufmerksamkeit der Lehrkraft, keine Ablenkung durch Mitschüler.</span></div>
-          <div class="stat"><b>Für Eltern bedeutet das...</b><span class="small">Kompetente Lehrkräfte begleiten individuell und fachlich professionell ihr Kind im Mittelpunkt.</span></div>
+          <div class="stat">
+            <b>Für Schüler bedeutet das...</b>
+            <ul class="small stat-list">
+              <li>Lerninhalt, Tempo und Methoden werden exakt den Bedürfnissen angepasst</li>
+              <li>volle Aufmerksamkeit der Lehrkraft</li>
+              <li>keine Ablenkung durch Mitschüler</li>
+            </ul>
+          </div>
+          <div class="stat">
+            <b>Für Eltern bedeutet das...</b>
+            <ul class="small stat-list">
+              <li>Kompetente Lehrkräfte begleiten individuell und fachlich professionell</li>
+              <li>ihr Kind im Mittelpunkt</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -68,7 +81,6 @@
       <div class="section-title">
         <div>
           <h2>Was uns besonders macht</h2>
-          <p class="sub">Weil Lernen individuell ist – und genau so sollte Nachhilfe sein.</p>
         </div>
       </div>
 
@@ -98,7 +110,6 @@
       <div class="section-title">
         <div>
           <h2>Unsere Unterrichtsangebote</h2>
-          <p class="sub">Klicke auf ein Angebot oben, um direkt zum passenden Abschnitt zu springen.</p>
         </div>
       </div>
 
@@ -107,8 +118,8 @@
           <h3>1. Begleitunterricht / Lernbegleitung</h3>
           <p>
             Der Begleitunterricht richtet sich an Schülerinnen und Schüler, die im Schulalltag punktuell
-            Unterstützung benötigen. Im Einzelunterricht mit persönlicher Zuwendung werden aktuelle Fragen
-            aus dem Unterricht aufgegriffen, Hausaufgaben gemeinsam bearbeitet und Verständnisprobleme
+            Unterstützung benötigen. Im Einzelunterricht werden aktuelle Fragen
+            aus dem Unterricht aufgegriffen und Verständnisprobleme
             behutsam geklärt.
           </p>
           <p>
@@ -122,7 +133,7 @@
           <h3>2. Reguläre Nachhilfe</h3>
           <p>
             Die reguläre Nachhilfe bietet Schülerinnen und Schülern kontinuierliche Unterstützung im
-            Unterrichtsstoff. Im Einzelunterricht mit persönlicher Zuwendung werden Wissenslücken
+            Unterrichtsstoff. Im Einzelunterricht werden Wissenslücken
             geschlossen, neue Themen erklärt und auf Klassenarbeiten vorbereitet.
           </p>
           <p>
@@ -135,8 +146,8 @@
           <h3>3. Lernförderung</h3>
           <p>
             Die Lernförderung richtet sich an Schülerinnen und Schüler, die gezielt ihre Lernlücken
-            aufarbeiten und ihre Leistungen nachhaltig verbessern möchten. Im Einzelunterricht mit
-            persönlicher Zuwendung erarbeiten wir gemeinsam einen individuellen Lernplan, üben gezielt
+            aufarbeiten und ihre Leistungen nachhaltig verbessern möchten. Im Einzelunterricht erarbeiten
+            wir gemeinsam einen individuellen Lernplan, üben gezielt
             schwierige Inhalte und fördern Selbstvertrauen und Motivation beim Lernen.
           </p>
           <p>
@@ -149,7 +160,7 @@
           <h3>4. Intensivkurs</h3>
           <p>
             Der Intensivkurs ist für Schülerinnen und Schüler gedacht, die schnell aufholen oder gezielt auf
-            Prüfungen vorbereitet werden müssen. Im Einzelunterricht mit persönlicher Zuwendung arbeiten wir
+            Prüfungen vorbereitet werden müssen. Im Einzelunterricht arbeiten wir
             engmaschig an den wichtigsten Themen, schließen Verständnislücken und trainieren gezielt
             Prüfungsaufgaben.
           </p>
@@ -167,14 +178,13 @@
       <div class="section-title">
         <div>
           <h2>Preise</h2>
-          <p class="sub">Transparent und fair - passend zum Bedarf</p>
         </div>
       </div>
 
       <div class="grid3">
         <div class="feature">
           <h3>ab 65,- € monatlich</h3>
-          <p>Individuell kalkuliert je nach Unterrichtsbedarf und Umfang.</p>
+          <p class="pill m0">Transparent und fair - passend zum Bedarf</p>
         </div>
       </div>
 
@@ -198,8 +208,12 @@
         <p>Wir bieten qualifizierte Nachhilfe in Mathematik, Deutsch und Englisch sowie in weiteren Fächern wie Französisch, Latein und Naturwissenschaften an. Ziel ist nicht nur das Bestehen, sondern eine deutliche Leistungssteigerung.</p>
       </details>
       <details>
-        <summary>Für welche Klassenstufen ist die Nachhilfe geeignet?</summary>
-        <p>Unsere Förderung richtet sich an Schülerinnen und Schüler aller Klassenstufen - von der Grundschule bis zur Oberstufe. Auch die gezielte Vorbereitung auf Abschlussprüfungen und wichtige Leistungsnachweise gehört zu unserem Schwerpunkt.</p>
+        <summary>Wird mein Kind von einer festen Lehrkraft unterrichtet?</summary>
+        <p>Ja. Jeder Schüler wird dauerhaft von einer festen Lehrkraft betreut. Diese Kontinuität sorgt für Vertrauen, Stabilität und eine effektive Lernentwicklung. Die Lehrkraft kennt den Leistungsstand genau, verfolgt die Fortschritte kontinuierlich und kann den Unterricht optimal anpassen. Das steigert Motivation, Sicherheit und Lernerfolg.</p>
+      </details>
+      <details>
+        <summary>Für wen ist unsere Nachhilfe geeignet?</summary>
+        <p>Wir begleiten Schülerinnen und Schüler der Grundschule, der Sekundarstufe I (Klasse 5–10), der Sekundarstufe II mit gezielter Abiturvorbereitung sowie Auszubildende in kaufmännischen Berufen.</p>
       </details>
       <details>
         <summary>Wie läuft der Start ab?</summary>
@@ -214,8 +228,8 @@
         <p>Nein. Wir möchten, dass Sie aus Überzeugung bei uns bleiben - nicht aufgrund vertraglicher Bindung. Deshalb gibt es keine feste Kündigungsfrist.</p>
       </details>
       <details>
-        <summary>Für wen ist unsere Nachhilfe geeignet?</summary>
-        <p>Wir begleiten Schülerinnen und Schüler der Grundschule, der Sekundarstufe I (Klasse 5–10), der Sekundarstufe II mit gezielter Abiturvorbereitung sowie Auszubildende in kaufmännischen Berufen.</p>
+        <summary>Für welche Klassenstufen ist die Nachhilfe geeignet?</summary>
+        <p>Unsere Förderung richtet sich an Schülerinnen und Schüler aller Klassenstufen - von der Grundschule bis zur Oberstufe. Auch die gezielte Vorbereitung auf Abschlussprüfungen und wichtige Leistungsnachweise gehört zu unserem Schwerpunkt.</p>
       </details>
       <details>
         <summary>Gibt es Zusatzstunden vor Klassenarbeiten oder Prüfungen?</summary>
@@ -228,10 +242,6 @@
       <details>
         <summary>Wer sind die Nachhilfelehrer?</summary>
         <p>Unsere Lehrkräfte verfügen über langjährige Unterrichtserfahrung und fundierte Fachkenntnisse. Sie arbeiten strukturiert, zielorientiert und mit einem klaren Blick für individuelle Lernstrategien. Dank ihrer Erfahrung erkennen sie schnell Lernlücken und setzen gezielte Maßnahmen um, die zu messbaren Erfolgen führen.</p>
-      </details>
-      <details>
-        <summary>Wird mein Kind von einer festen Lehrkraft unterrichtet?</summary>
-        <p>Ja. Jeder Schüler wird dauerhaft von einer festen Lehrkraft betreut. Diese Kontinuität sorgt für Vertrauen, Stabilität und eine effektive Lernentwicklung. Die Lehrkraft kennt den Leistungsstand genau, verfolgt die Fortschritte kontinuierlich und kann den Unterricht optimal anpassen. Das steigert Motivation, Sicherheit und Lernerfolg.</p>
       </details>
       <details>
         <summary>Gibt es finanzielle Unterstützung?</summary>
